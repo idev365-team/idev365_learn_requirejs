@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>课05.详解RequireJS的配置选项</title>
+    <script>
+        var require = {
+            deps:["scripts/cat","scripts/dog"],
+            callback:function(cat,dog){
+                cat.say()
+                dog.say()
+            }
+        }
+    </script>
+    <script src="./scripts/require.js"></script>
+    <script>
+        // require(["scripts/cat","scripts/dog"],function(cat,dog){
+        //     cat.say()
+        //     dog.say()
+        // })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

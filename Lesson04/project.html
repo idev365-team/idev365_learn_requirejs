@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>课04.RequireJS中如何定义模块-下</title>
+    
+    <script src="./scripts/require.js"></script>
+
+    <script>
+        // var requireConfig = {
+        //     deps: ["scripts/my/cat", "scripts/my/dog"],
+        //     callback: function(cat, dog) {
+        //         console.log(cat.say())
+        //         console.log(dog.say())
+        //     }
+        // };
+        // require(requireConfig.deps,requireConfig.callback)
+
+
+        require(["scripts/my/cat", "scripts/my/dog"],function(cat, dog) {
+                console.log(cat.say())
+                console.log(dog.say())
+        })
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
