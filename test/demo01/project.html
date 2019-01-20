@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+</head>
+<body>
+    <h1 id="result"></h1>
+    <button id="btnSend">Send</button>
+    <script src="./scripts/require.js"></script>
+    <script>
+        // require.config({
+        //     baseUrl:"scripts"
+        // })
+        
+        document.querySelector("#btnSend").onclick=function(){
+            requirejs(["scripts/main"],function(main){
+                main.getUsers().then(function(data){
+                    console.log("成功获取数据：",data)
+                }).catch(function(err){
+                    console.log("获取数据失败：",err)
+                })
+            })
+        }
+    </script>
+</body>
+</html>

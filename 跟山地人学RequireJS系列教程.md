@@ -46,3 +46,20 @@
 ## 课05.详解RequireJS的配置选项
 
 * 微信:colin3dmax
+
+===================================
+
+# 山地人学RequireJS系列教程
+
+## 课06.RequireJS封装JSONP服务
+
+* 微信:colin3dmax
+
+===================================
+
+# 山地人学RequireJS系列教程
+
+## 课07.RequireJS
+
+* 微信:colin3dmax
+
